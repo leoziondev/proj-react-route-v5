@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, NavLink, Route, Switch } from 'react-router-dom';
 import './App.css'
 import { AboutPage } from './pages/About';
 import { ContactPage } from './pages/Contact';
@@ -10,6 +10,10 @@ function App() {
       <BrowserRouter>
         <nav>
           <h1>My Articles</h1>
+
+          <NavLink to="/" exact>Home</NavLink>
+          <NavLink to="/about">About</NavLink>
+          <NavLink to="/contact">Contact</NavLink>
         </nav>
 
         <Switch>
