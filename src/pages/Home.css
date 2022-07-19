@@ -1,0 +1,16 @@
+.home .card {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 4px 4px 6px rgba(0,0,0,.05);
+  margin-bottom: 20px;
+  background: white;
+}
+
+.home .card h2 {
+  margin-bottom: 5px;
+}
+
+.home .card p {
+  margin-top: 0px;
+  color: #777;
+}
