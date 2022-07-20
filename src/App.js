@@ -1,4 +1,4 @@
-import { BrowserRouter, NavLink, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, NavLink, Redirect, Route, Switch } from 'react-router-dom';
 import './App.css'
 import { AboutPage } from './pages/About';
 import { Article } from './pages/Article';
@@ -22,6 +22,9 @@ function App() {
           <Route path="/about"><AboutPage /></Route>
           <Route path="/contact"><ContactPage /></Route>
           <Route path="/articles/:id"><Article /></Route>
+          <Route path="*">
+            <Redirect to="/" />
+          </Route>
         </Switch>
       </BrowserRouter>
     </div>
